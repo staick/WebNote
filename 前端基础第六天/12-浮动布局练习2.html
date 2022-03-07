@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .video-list {
+            width: 1226px;
+            height: 285px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .video-list li {
+            float: left;
+            width: 296px;
+            height: 285px;
+            background-color: skyblue;
+            margin-right: 14px;
+        }
+
+        /* 注意权重的问题 */
+        .video-list .last {
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="video-list">
+        <li>
+            <div></div>
+            <div>小米CC9</div>
+            <div>深蓝星球</div>
+        </li>
+        <li>
+            <div></div>
+            <div>Redmi Note 7系列</div>
+            <div>镜花水月</div>
+        </li>
+        <li>
+            <div></div>
+            <div>黑鲨游戏手机2 Pro</div>
+            <div>指尖主宰 发布会</div>
+        </li>
+        <li class="last">
+            <div></div>
+            <div>小米手环4</div>
+            <div>改变从今开始</div>
+        </li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            background: url(images/miku1.jpg) no-repeat;
+            /* 
+                只写一个参数肯定是宽度，高度等比例缩放
+                - 还可以用百分比
+                - cover 要完全覆盖，可能显示不全
+                - contain 将图像扩展至最大尺寸，高度和宽度等比例拉伸，当宽度或高度到达边缘会停止拉伸，可能出现空白
+             */
+
+            background-size: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

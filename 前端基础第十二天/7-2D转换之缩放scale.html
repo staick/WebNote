@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        div:hover {
+            /* 里面写的数字不跟单位，数字是倍数的意思 */
+            /* transform: scale(x, y); */
+            /* transform: scale(2, 2); */
+            /* transform: scale(2, 1); */
+            /* 只写一个参数，同时修改宽度和高度 */
+            /* transform: scale(2); */
+            /* 参数小于1就是缩小 */
+            transform: scale(.1);
+            /* 
+                scale的优势之处
+                    - 不会影响其他的盒子
+                    - 可以设置缩放的中心点
+             */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
