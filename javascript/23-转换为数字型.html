@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var age = prompt('请输入您的年龄');
+        // 1. parseInt(变量) 可以把字符型转换为数字型 得到整数
+        console.log(parseInt(age));
+        console.log(parseInt('3.14'));  // 3
+        console.log(parseInt('3.94'));  // 3
+        console.log(parseInt('120px'));  // 120 会去掉px单位
+        // 2. parseFloat(变量) 可以把字符型转换为数字型 的到小数
+        console.log(parseFloat('3.14'));
+        // 3. 利用Number(变量)
+        var str = '123';
+        console.log(Number(str));
+        // 4. 利用运算符 - * / 隐式转换
+        console.log('12' - 0); // 12
+        console.log('123' - '120'); // 3
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
