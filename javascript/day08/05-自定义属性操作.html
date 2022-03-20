@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo" index="1"></div>
+    <script>
+        var div = document.querySelector('div');
+        // 获取元素的属性值
+        // element.属性
+        console.log(div.id);
+        console.log(div.index); // undefined
+        // element.getAttribute('属性') 可以使用自定义属性
+        console.log(div.getAttribute('id'));
+        console.log(div.getAttribute('index'));
+
+        // 设置元素属性值
+        div.id = 'test';
+
+        // element.setAttribute('属性','值')
+        div.setAttribute('id', 'nav');
+    </script>
+</body>
+</html>

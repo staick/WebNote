@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" id="sa">
+    <div class="box">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+    <script>
+        var sa = document.getElementById('sa');
+        var so = document.querySelector('.box').getElementsByTagName('input');
+        sa.onclick = function () {
+            // this.checked可以得到当前的状态 选中true 未选中false
+            for (var i = 0; i < so.length; i++) {
+                so[i].checked = this.checked;
+            }
+        }
+        for(var i = 0; i < so.length; i++) {
+            so[i].onclick = function () {
+                var flag = true;
+                for (var j = 0; j < so.length; j++) {
+                    if (!so[j].checked) {
+                        flag = false;
+                    }
+                }
+                sa.checked = flag;
+            }
+        }
+    </script>
+</body>
+</html>
