@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .change {
+            background-color: purple;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="first">文本</div>
+    <script>
+        // 1.使用element.style获得修改元素样式 如果样式比较少 或者功能简单的情况下使用
+        var test = document.querySelector('div');
+        test.onclick = function () {
+            // 2. 可以通过修改元素的className更改元素的样式
+            // this.className = 'change';
+            // 3. 如果想要保留原先的类名，我们可以这样做
+            this.className = 'first change';
+        }
+    </script>
+</body>
+</html>

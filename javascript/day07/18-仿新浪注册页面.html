@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="register">
+        <input type="password" class="ipt">
+        <p class="message">请输入6~16位密码</p>
+    </div>
+    <script>
+        // 首先判断的事件是表单失去焦点 onblur
+        // 如果输入正确则提示正确的信息
+        // 如果输入不符合6~16位，则提示错误
+        var ipt = document.querySelector('.ipt');
+        var message = document.querySelector('.message');
+        ipt.onblur = function() {
+            if(this.value.length < 6 || this.value.length > 16) {
+                console.log("错误");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="miku" title="初音未来">初音未来</button>
+    <button id="lty" title="洛天依">洛天依</button> <br>
+    <img src="miku.jpg">
+    <script>
+        var miku = document.getElementById('miku');
+        var lty = document.getElementById('lty');
+        var img = document.querySelector('img');
+        miku.onclick = function () {
+            img.src = 'miku.jpg';
+            img.title = '初音未来';
+        }
+        lty.onclick = function () {
+            img.src = 'lty.jpg';
+            img.title = '洛天依';
+        }
+    </script>
+</body>
+</html>
